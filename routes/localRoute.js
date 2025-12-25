@@ -10,4 +10,8 @@ router.post('/upload',localupload);
 
 router.post('/cloudupload',cloudupload);
 
+router.get('/',(req,res)=>{
+    res.send('this is local route');
+});
+
 export default router;
